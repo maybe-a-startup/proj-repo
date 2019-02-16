@@ -1,0 +1,86 @@
+html, body {
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+}
+
+.main {
+	height: 100vh;
+	width: 100%;
+	background-color: #e9ecef;
+	padding: 0vh;
+}
+
+.query-heading {
+  padding-top: 8%;
+  padding-left: 5%;
+}
+
+.ml-heading {
+	font-size: 8vh;
+}
+
+.ml-content {
+	font-size: 1.1em !important;
+	opacity: 0.5;
+	margin-bottom: 0;
+}
+
+.ml-seperator {
+	margin-bottom: 32px;
+}
+
+.ml-form {
+	width: 50%;
+	margin-left: 4%;
+}
+
+.col-sm-5 {
+	margin: 2%;
+}
+
+.area {
+  margin: 2%;
+}
+
+.btn {
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.ml-form-heading {
+	font-size: 1.1em !important;
+	font-style: bold;
+}
+
+.git-link {
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 3%;
+}
+
+.ml-form-heading-1 {
+	font-size: 1.1em !important;
+	font-style: bold;
+}
+
+.fa-github {
+	font-size: 2em;
+	color: #444444;
+}
+
+@media screen {
+        body {
+          font-style: bold;
+          font-family: 'Poppins', sans-serif;
+        }
+}
+
+@media (max-width: 300px) {
+      .main {
+	height: 150vh;
+	width: 100%;
+	background-color: #e9ecef;
+	padding: 0vh;
+}
+}

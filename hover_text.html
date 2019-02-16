@@ -1,20 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html class="animated fadeIn">
 <head>
 	<meta charset="utf-8">
-	<title>Hover Menu</title>
+	<title>Menu</title>
+	<link href="fonts.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="stylesheet" type="text/css" href="hover_text.css">
+	<link href="animate.css" rel="stylesheet">
+	<script type="text/javascript">
+		function Coming() {
+		  var x = document.getElementById("snackbar");
+		  x.innerHTML = "Coming soon!";
+		  x.className = "show";
+		  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+		}
+
+		function Progress() {
+		  var x = document.getElementById("snackbar");
+		  x.innerHTML = "In Progress";
+		  x.className = "show";
+		  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+		}
+
+		function again() {
+		  var x = document.getElementById("snackbar");
+		  x.innerHTML = "Double click";
+		  x.className = "show";
+		  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+		}
+
+		function core() {
+			// body...
+		}
+
+		function deep() {
+			// body...
+		}
+
+		function Machine() {
+			window.location.href = "machine.html";
+		}
+
+		function Networking() {
+			// body...
+		}
+
+		function Web() {
+			// body
+		}
+
+		function Personal() {
+			window.location.href = "query.html";
+		}
+
+		function back() {
+			window.location.href = "home.html";
+		}
+	</script>
 </head>
 <body>
-	<ul class="ml-auto">
-		<li><a href="#">Machine Learning</a></li>
-		<li><a href="#">Deep Learning</a></li>
-		<li><a href="#">Networking</a></li>
-		<li><a href="#">Web Design</a></li>
-		<li><a href="#">Core</a></li>
-		<li><a href="#">Personal Query</a></li>
-		<li><a href="index.html">back</a></li>
-	</ul>
+	<div class="sidebar">
+		<ul>
+			<li><a onclick="Coming()">Core</a></li>
+			<li><a onclick="Machine()">Machine Learning</a></li>
+			<li><a onclick="Coming()">Deep Learning</a></li>
+			<li><a onclick="Coming()">Networking</a></li>
+			<li><a onclick="Coming()">Web Design</a></li>
+			<li><a onclick="Personal()">Personal Query</a></li>
+			<li><a style="color: cyan" onclick="back()">back</a></li>
+		</ul>
+	</div>
+	<div id="snackbar">Coming soon!</div>
 </body>
 </html>

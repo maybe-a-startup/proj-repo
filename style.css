@@ -1,29 +1,73 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-
-
-
 html, body {
+  position: relative;
   height: 100%;
   width: 100%;
-  font-family: Poppins;
 }
 
-.jumbotron{
 
+.jumbotron{
+  margin-bottom: 0rem;
+  padding: 0rem 0rem;
+    padding-top: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
 }
 
 .navbar {
-  padding: .8rem;
+  padding: 0.1rem;
+}
+
+.page-header {
+  margin-left: 5%;
+}
+
+.nav-item a {
+  font-size: 2em;
+  padding: 0;
+}
+
+.fa-github {
+  color: #444444;
+}
+
+.fa-linkedin {
+  color: #007BB6;
+}
+
+
+.fa-reddit {
+  color: #444444;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
 }
 
 @media screen {
-        h1{
-            font-size:60px;
-            text-align: center;
-            font-family: Euphoria Script;
+        body {
+          font-style: bold;
+          font-family: 'Poppins', sans-serif;
         }
-    }
 
+        .name_heading {
+            font-family: 'Euphoria Script', cursive;
+        }
+
+        .connect, .ask, .get {
+          font-size: 1.6em !important;
+          font-family: 'Encode Sans Condensed', sans-serif;
+        }
+
+        .para {
+          font-size: 15px;
+          opacity: 0.5;
+        }
+}
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
@@ -33,20 +77,29 @@ html, body {
   
 }
 @media (max-width: 576px) {
-  
+      .fa-github {
+        padding-left: 20px;
+      }
+      .fa-linkedin {
+        padding-left: 20px;
+      }
+      .fa-reddit {
+        padding-left: 20px;
+      }
 }
 
 
+
 /*---Firefox Bug Fix --*/
-/*.carousel-item {
+.carousel-item {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
-}*/
+}
 /*--- Fixed Background Image --*/
-figure {
+/*figure {
   position: relative;
   width: 100%;
   height: 60%;
@@ -73,17 +126,29 @@ figure {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   will-change: transform;
-}
+}*/
 /*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
+[class*="col-sm-6"] {
+    padding: 0rem;
 }
 
+[class*="col-sm-4"] {
+    padding: 3rem;
+}
 
+[class*="col-sm-5"] {
+    padding: 10%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
 
 /* A something new */
-/*
-div#cards {
+
+/*div#cards {
   background-color: #efefef !important;
 }
 
@@ -113,8 +178,8 @@ div#cards {
   font-size: 12px;
   color: cornflowerblue;
 }
-
 */
+
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
@@ -131,11 +196,9 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-
-
-
-
-
-
+.seperator {
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  border-right: 1px solid #A8A8A8;
+}
 

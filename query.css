@@ -1,0 +1,58 @@
+html, body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: #e9ecef;
+  padding: 0vh;
+}
+
+.query-heading {
+  padding-top: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 15%;
+}
+
+.col-sm-5 {
+  margin: 2%;
+  margin-left: 0%;
+}
+
+.area {
+  margin: 2%;
+  margin-left: 0%;
+}
+
+.btn {
+  margin-top: 2%;
+}
+
+@media screen {
+        body {
+          font-style: bold;
+          font-family: 'Poppins', sans-serif;
+        }
+}
+
+@media (max-width: 300px) {
+        .main {
+    height: 110vh;
+    width: 100%;
+    background-color: #e9ecef;
+    padding: 0vh;
+  }
+}
+
+@media (max-height: 300px) {
+        .main {
+    height: 110vh;
+    width: 100%;
+    background-color: #e9ecef;
+    padding: 0vh;
+  }
+}
