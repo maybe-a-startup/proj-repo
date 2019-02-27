@@ -2,14 +2,12 @@ html, body {
 	height: 100vh;
 	width: 100%;
 	margin: 0;
-}
 
-.main {
-	height: 100vh;
-	width: 100%;
 	background-color: #e9ecef;
 	padding: 0vh;
 }
+
+
 
 .query-heading {
   padding-top: 8%;
@@ -31,7 +29,7 @@ html, body {
 }
 
 .ml-form {
-	width: 50%;
+	margin-right: 0%;
 	margin-left: 4%;
 }
 
@@ -56,7 +54,7 @@ html, body {
 .git-link {
 	margin-left: 30%;
 	margin-right: 30%;
-	margin-top: 3%;
+	margin-top: 20%;
 }
 
 .ml-form-heading-1 {
@@ -76,11 +74,21 @@ html, body {
         }
 }
 
-@media (max-width: 300px) {
+@media only screen and (orientation:portrait) {
       .main {
-	height: 150vh;
-	width: 100%;
-	background-color: #e9ecef;
-	padding: 0vh;
+		height: 200%;
+		width: 100%;
+		padding: 0vh;
+	}
+
+	.ml-form {
+		width: 100%;
+	}
 }
+
+
+.main {
+	height: 150%;
+	width: 100%;
+	padding: 0vh;
 }
