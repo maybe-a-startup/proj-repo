@@ -19,7 +19,7 @@
         spreadsheetId: '1mbkeUFDWS6Uz6tByvvmqv1a6KiVF76z9iK_PGgGz7mY',  // TODO: Update placeholder value.
 
         // The ranges to retrieve from the spreadsheet.
-        ranges: [Sheet1],  // TODO: Update placeholder value.
+        ranges: ['Sheet1'],  // TODO: Update placeholder value.
 
 
         // valueRenderOption: 'FORMATTED_VALUE',
