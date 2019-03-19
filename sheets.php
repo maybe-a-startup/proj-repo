@@ -30,7 +30,7 @@
       request.then(function(response) {
         // TODO: Change code below to process the `response` object:
         console.log(response.result);
-        populatesheets(response.result);
+        // populatesheets(response.result);
       }, function(reason) {
         console.error('error: ' + reason.result.error.message);
       });
@@ -60,13 +60,13 @@
       });
     }
 
-    function populatesheets(results) {
-      for(var row=0;row<20;row++){
-        for(var col=0;col<3;col++) {
-          document.getElementById(row+":"+col).value = results.values[row][col];
-        }
-      }
-    }
+    // function populatesheets(results) {
+    //   for(var row=0;row<20;row++){
+    //     for(var col=0;col<3;col++) {
+    //       document.getElementById(row+":"+col).value = results.values[row][col];
+    //     }
+    //   }
+    // }
 
     function handleClientLoad() {
       gapi.load('client:auth2', initClient);
@@ -92,18 +92,9 @@
     </script>
     <button id="signin-button" onclick="handleSignInClick()">Sign in</button>
     <button id="signout-button" onclick="handleSignOutClick()">Sign out</button>
-    <div style="margin-left: auto; margin-right: auto; width: 960px"></div>
+    <div style="margin-left: auto; margin-right: auto; width: 960px;"></div>
 
 
-    <?php
-
-    for($row=0;$row<20;$row++){
-      echo "<div style='clear:both'>";
-      for($col=0;$col<3;$col++){
-        echo "<input type='text' style='float:left;' name='$row:$col' id='$row:$col'>";
-      }      
-      echo "</div>";
-    }
 
     ?>
 
