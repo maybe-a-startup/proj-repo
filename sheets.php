@@ -26,6 +26,7 @@
         // True if grid data should be returned.
         // This parameter is ignored if a field mask was set in the request.
         // includeGridData: false,  // TODO: Update placeholder value.
+        valueRenderOption: 'FORMATTED_VALUE'
       };
 
       var request = gapi.client.sheets.spreadsheets.get(params);
@@ -39,9 +40,9 @@
     }
 
     function initClient() {
-      var API_KEY = 'AIzaSyBAnJzM4YmLbqQXg5C66nSFR_lYp9fkVOM';  // TODO: Update placeholder with desired API key.
+      var API_KEY = 'AIzaSyA8bzhFaNezPGPo0yRU3DCtWnvqamzDQVE';  // TODO: Update placeholder with desired API key.
 
-      var CLIENT_ID = '197100295917-g78aciudr36rh0abac9painip85fbb68.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
+      var CLIENT_ID = '752991306524-el7hvvjk5p0cqkktu361a2ogad8tsv4u.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
 
       // TODO: Authorize using one of the following scopes:
       //   'https://www.googleapis.com/auth/drive'
