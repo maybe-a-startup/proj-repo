@@ -19,19 +19,19 @@
         spreadsheetId: '1mbkeUFDWS6Uz6tByvvmqv1a6KiVF76z9iK_PGgGz7mY',  // TODO: Update placeholder value.
 
         // The ranges to retrieve from the spreadsheet.
-        ranges: ['Sheet1'],  // TODO: Update placeholder value.
+        ranges: 'Sheet1',  // TODO: Update placeholder value.
 
 
         // valueRenderOption: 'FORMATTED_VALUE',
         // True if grid data should be returned.
         // This parameter is ignored if a field mask was set in the request.
-        includeGridData: false,  // TODO: Update placeholder value.
+        // includeGridData: false,  // TODO: Update placeholder value.
       };
 
       var request = gapi.client.sheets.spreadsheets.get(params);
       request.then(function(response) {
         // TODO: Change code below to process the `response` object:
-        console.log(response);
+        console.log(response.result);
         // populatesheets(response.result);
       }, function(reason) {
         console.error('error: ' + reason.result.error.message);
@@ -62,13 +62,13 @@
       });
     }
 
-    // function populatesheets(results) {
-    //   for(var row=0;row<20;row++){
-    //     for(var col=0;col<3;col++) {
-    //       document.getElementById(row+":"+col).value = results.values[row][col];
-    //     }
-    //   }
-    // }
+    function populatesheets(results) {
+      for(var row=0;row<20;row++){
+        for(var col=0;col<3;col++) {
+          document.getElementById(row+":"+col).value = results.values[row][col];
+        }
+      }
+    }
 
     function handleClientLoad() {
       gapi.load('client:auth2', initClient);
