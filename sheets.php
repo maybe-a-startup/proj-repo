@@ -37,7 +37,7 @@
       for(var row=0;row<20;row++){
         for(var col=0;col<3;col++) {
           // document.getElementById(row+":"+col).value = results.values[row][col];
-          console.log(response.result.values[row][col]);
+          console.log(response.result.values);
         }
       }
     // }
