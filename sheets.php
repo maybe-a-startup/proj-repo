@@ -32,7 +32,15 @@
       var request = gapi.client.sheets.spreadsheets.get(params);
       request.then(function(response) {
         // TODO: Change code below to process the `response` object:
-        console.log(response.result);
+        // console.log(response.result);
+         // function populatesheets(results) {
+      for(var row=0;row<20;row++){
+        for(var col=0;col<3;col++) {
+          // document.getElementById(row+":"+col).value = results.values[row][col];
+          console.log(response.result.values[row][col]);
+        }
+      }
+    // }
         // populatesheets(response.result);
       }, function(reason) {
         console.error('error: ' + reason.result.error.message);
