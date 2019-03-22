@@ -26,7 +26,7 @@
         // True if grid data should be returned.
         // This parameter is ignored if a field mask was set in the request.
         // includeGridData: false,  // TODO: Update placeholder value.
-        valueRenderOption: 'FORMATTED_VALUE'
+        // valueRenderOption: 'FORMATTED_VALUE'
       };
 
       var request = gapi.client.sheets.spreadsheets.get(params);
